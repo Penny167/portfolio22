@@ -1,0 +1,361 @@
+
+.grid{
+  display: grid;
+  /* add as many columns as fit with each item min 300px and max as much space as is available */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+}
+
+.img-wrapper {
+  /* wrapper is positioned relatively because children need to be positioned absolutely
+  so image, text and background can be placed exactly on top of one another */
+  position: relative;
+  /* if we zoom on an image we don't want it to overflow the container */
+  overflow: hidden;
+  border-radius: .25rem;
+}
+
+/* style the images */
+.img-wrapper > img {
+  display: block;
+  width: 100%;
+  /*max-height: 300px; */
+  aspect-ratio: 16/9; 
+  /* make any differently sized images fit */
+  object-fit: cover;
+  /* focus on center of image so hidden overflow is the sides */
+  object-position: center; 
+}
+
+/* style the content */
+.img-wrapper > .content {
+  position: absolute;
+  /* set top left and right to zero */
+  inset: 0;
+  font-size: 1rem;
+  padding: 1rem;
+  background: rgba(152, 147, 216, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+  transition: 300ms ease-in-out;
+}
+
+.img-wrapper:hover > img.gray {
+  filter: grayscale(1);
+}
+
+.img-wrapper > .content.fade {
+  opacity: 0;
+}
+
+.img-wrapper:hover > .content.fade {
+  opacity: 1;
+}
+
+/* variables */
+:root{
+  --primary: #f353ab;
+  --secondary: #0A0B5B;
+  --tertiary: #007ce3;
+}
+
+/* reset default browser styles */
+body,p,a,ul,li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
+/* base styles */
+body{
+  background: var(--secondary);
+  overflow-x: hidden;
+  font-family: 'Rubik Regular';
+}
+.button{
+  background: none;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+  display: inline-block;
+}
+.button:hover{
+  color: #222;
+  background: var(--primary);
+}
+input, textarea{
+  background: rgba(255,255,255,0.05);
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 2px solid #9893D8;
+  color: #f2f2f2;
+}
+
+/* fonts */
+@font-face{
+  font-family: 'Rubik Regular';
+  src: url('assets/fonts/Rubik-Regular.ttf');
+}
+h1,h2,h3,h4{
+  color: #DDDBFF;
+  font-weight: normal;
+}
+p,a,li{
+  color: #9893D8;
+}
+h1,h3{
+  font-size: 1.2em;
+}
+h2{
+  font-size: 1.6em;
+}
+h4{
+  font-size: 1.1em;
+}
+.leading{
+  font-size: 1.1em;
+}
+
+/* mobile styles */
+.ninja-grid{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+.site-nav{
+  margin: 0 20px;
+}
+.site-nav ul{
+  display: none;
+}
+.site-nav h1{
+  grid-column: 1/5;
+  grid-row: 1;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary);
+}
+#welcome{
+  padding: 0 20px 20px 20px;
+}
+.welcome-text{
+  grid-column: 1/6;
+}
+.welcome-img{
+  grid-column: 6/9;
+}
+.welcome-img img{
+  width: 200%;
+}
+.welcome-text a{
+  margin: 20px 0;
+}
+#about{
+  padding: 10px 20px 20px 20px;
+}
+#about h3{
+  margin-bottom: 10;
+  text-align: center;
+}
+#about p{
+  margin: 20px 0;
+}
+#portfolio{
+  padding: 20px 20px 10px;
+}
+#portfolio h3{
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#portfolio p{
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+#skills{
+  padding: 30px 10px 10px 10px;
+  background: #07083E;
+}
+#skills h3{
+  text-align: center;
+}
+#skills ul{
+  margin: 10px 0;
+  gap: 5px;
+}
+#skills li{
+  padding: 10px;
+  background: rgba(0,0,0,0.2);
+  grid-column: span 2;
+  text-align: center;
+}
+#skills h4{
+  color: #9893D8;
+  font-size: 0.8em;
+}
+#contact{
+  padding: 10px 20px 30px 20px;
+  background: #080936;
+}
+#contact h3{
+  text-align: center;
+}
+#contact p{
+  margin-bottom: 0;
+  text-align: center;
+}
+#contact form{
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+#contact input, #contact textarea{
+  width: 80%;
+  margin: 10px 0;
+}
+#contact .button{
+  margin-top: 10px;
+}
+footer{
+  padding: 30px 20px;
+  background-color: #f2f2f2;
+}
+footer .copyright{
+  grid-column: 1/4;
+  font-size: 0.8em;
+}
+footer .social{
+  grid-column: 7/9;
+  display: flex;
+  justify-content: flex-end;
+}
+footer li{
+  margin: 0 6px;
+}
+footer img{
+  width: 20px;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px){
+
+  .site-nav h1{
+    grid-column: 1/4;
+  }
+  .welcome-text{
+    grid-column: 1/5;
+  }
+  .welcome-img{
+    grid-column: 5/9;
+  }
+  .welcome-img img{
+    width: 100%;
+  }
+  #skills{
+    padding: 30px 100px;
+  }
+  #skills h4{
+    font-size: 1em;
+  }
+
+}
+
+/* large tablets & laptop styles */
+@media screen and (min-width: 960px){
+
+  body{
+    font-size: 18px;
+  }
+  .ninja-grid{
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .leading{
+    margin: 20px 0;
+  }
+  .site-nav{
+    padding: 0 20px;
+  }
+  .site-nav h1{
+    grid-column: 1/3;
+  }
+  .site-nav ul{
+    display: flex;
+    grid-column: 6/9;
+    justify-content: flex-end;
+    align-self: center;
+  }
+  .site-nav li{
+    margin-left: 20px;
+  }
+  .welcome-text{
+    align-self: center;
+    margin-top: 20px;
+  }
+  #welcome{
+    padding-bottom: 30px;
+  }
+  #about h3{
+    margin-top: 0;
+  }
+  #about p{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  footer{
+    padding: 40px 20px;
+  }
+
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px){
+
+  body{
+    font-size: 20px;
+  }
+  .ninja-grid{
+    max-width: 1400px;
+  }
+  .site-nav{
+    padding: 0 70px;
+  }
+  #welcome{
+    padding-top: 50px;
+  } 
+  .welcome-text{
+    padding-left: 50px;
+  }
+  #about{
+    padding-bottom: 45px;
+  }
+  #about p{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #portfolio, #skills, #contact{
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  footer{
+    padding: 60px 30px;
+  }
+  footer img{
+    width: 30px;
+  }
+
+}
