@@ -1,7 +1,7 @@
 
 .grid{
   display: grid;
-  /* add as many columns as fit with each item min 300px and max as much space as is available */
+  /* add as many columns as fit with each item min 350px and max as much space as is available */
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.25em;
   padding: 0 0 1em;
@@ -25,7 +25,7 @@
   /* make any differently sized images fit */
   object-fit: cover;
   /* focus on center of image so hidden overflow is the sides */
-  object-position: center; 
+  object-position: -100px; 
   filter: grayscale(1);
 }
 
@@ -414,6 +414,52 @@ footer img{
   }
   footer .social{
     grid-column: 9/11;
+  }
+
+}
+
+/* fix image positioning */
+@media screen and (max-width: 350px){
+  
+  .img-wrapper > img {
+    object-position: -150px; 
+  }
+
+}
+@media screen and (max-width: 400px) and (min-width: 351px) {
+  
+  .img-wrapper > img {
+    object-position: -125px; 
+  }
+
+}
+@media screen and (max-width: 1150px) and (min-width: 940px) {
+  
+  .img-wrapper > img {
+    object-position: -75px; 
+  }
+
+}
+@media screen and (max-width: 1514px) and (min-width: 1350px) {
+  
+  .img-wrapper > img {
+    object-position: -50px; 
+  }
+
+}
+
+/* fix issue where image is at full width but no room for 2 images therefore content overspills */
+@media screen and (max-width: 759px) and (min-width: 620px) {
+  
+  .grid{
+    padding: 0 7em 1em;
+  }
+
+}
+@media screen and (max-width: 619px) and (min-width: 525px) {
+  
+  .grid{
+    padding: 0 5em 1em;
   }
 
 }
