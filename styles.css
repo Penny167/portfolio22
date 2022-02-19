@@ -336,12 +336,18 @@ footer img{
   .site-nav li{
     margin-left: 20px;
   }
+  .site-nav a:hover{
+    color: var(--primary);
+  }
   .welcome-text{
     align-self: center;
     margin-top: 20px;
   }
   #welcome{
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+  }
+  #about{
+    padding-top: 30px;
   }
   #about h3{
     margin-top: 0;
@@ -351,7 +357,7 @@ footer img{
     margin-right: 40px;
   }
   footer{
-    padding: 40px 20px;
+    padding: 35px 20px;
   }
 
 }
@@ -386,7 +392,7 @@ footer img{
     padding-bottom: 90px;
   }
   footer{
-    padding: 60px 30px;
+    padding: 40px 30px;
   }
   footer img{
     width: 30px;
@@ -404,6 +410,9 @@ footer img{
     max-width: 1800px;
   }
   .site-nav ul{
+    grid-column: 9/11;
+  }
+  footer .social{
     grid-column: 9/11;
   }
 
