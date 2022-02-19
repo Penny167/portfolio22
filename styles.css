@@ -418,6 +418,40 @@ footer img{
 
 }
 
+/* very large desktop styles */
+@media screen and (min-width: 2040px){
+
+  .ninja-grid{
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .ninja-grid{
+    max-width: 2200px;
+  }
+  .site-nav ul{
+    grid-column: 11/13;
+  }
+  footer .social{
+    grid-column: 11/13;
+  }
+
+}
+@media screen and (min-width: 2400px){
+
+  .ninja-grid{
+    grid-template-columns: repeat(16, 1fr);
+  }
+  .ninja-grid{
+    max-width: 2600px;
+  }
+  .site-nav ul{
+    grid-column: 15/17;
+  }
+  footer .social{
+    grid-column: 15/17;
+  }
+
+}
+
 /* fix image positioning */
 @media screen and (max-width: 350px){
   
