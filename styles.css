@@ -25,6 +25,7 @@
   object-fit: cover;
   /* focus on center of image so hidden overflow is the sides */
   object-position: center; 
+  filter: grayscale(1);
 }
 
 /* style the content */
@@ -47,15 +48,15 @@
 }
 
 .img-wrapper:hover > img.gray {
-  filter: grayscale(1);
+  filter: grayscale(0);
 }
 
 .img-wrapper > .content.fade {
-  opacity: 0;
+  opacity: 1;
 }
 
 .img-wrapper:hover > .content.fade {
-  opacity: 1;
+  opacity: 0;
 }
 
 /* variables */
