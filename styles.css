@@ -2,7 +2,7 @@
 .grid{
   display: grid;
   /* add as many columns as fit with each item min 300px and max as much space as is available */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.25em;
   padding: 0 0 1em;
 }
@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:flex-start;
+  align-items: center;
 }
 
 .img-wrapper > img,
@@ -192,6 +192,17 @@ h4{
   color: var(--secondary);
   font-size: 0.9rem;
 }
+#portfolio h4{
+  color: var(--secondary);
+  margin-bottom: 1em;
+  margin-top: 0em;
+}
+#portfolio p.project-text{
+  margin-bottom: 1em;
+}
+#portfolio p.technologies{
+  margin-bottom: 1em;
+}
 #skills{
   padding: 30px 10px 10px 10px;
   background: #07083E;
@@ -255,6 +266,20 @@ footer li{
 }
 footer img{
   width: 20px;
+}
+
+/* small mobile styles */
+@media screen and (max-width: 425px){
+
+  .grid{
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  #portfolio h4{
+    color: var(--secondary);
+    margin-bottom: 0.5em;
+    margin-top: 0em;
+  }
+
 }
 
 /* small tablet styles */
@@ -365,6 +390,21 @@ footer img{
   }
   footer img{
     width: 30px;
+  }
+
+}
+
+/* large desktop styles */
+@media screen and (min-width: 1600px){
+
+  .ninja-grid{
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .ninja-grid{
+    max-width: 1800px;
+  }
+  .site-nav ul{
+    grid-column: 9/11;
   }
 
 }
