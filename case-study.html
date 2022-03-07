@@ -169,15 +169,15 @@
       could repeat the patterns that I’d learned so far to fulfil the requirements.
     </p>
     <h4>Creating movie data dialogs</h4>
-    <p>
-      I knew how to display information in dialogs from building the registration and login components and decided to use this technique to 
-      display the movie synopsis, genre and director information.
-    </p>
-    <p>
-      The challenge here was how I was going to pass the data from the movie component to the dialogs. So far I had opened dialogs 
-      from inside a “parent” component, but I hadn’t needed to pass any data to them. 
-    </p>
     <ul>
+      <li>
+        I knew how to display information in dialogs from building the registration and login components and decided to use this technique to 
+        display the movie synopsis, genre and director information.
+      </li>
+      <li>
+        The challenge here was how I was going to pass the data from the movie component to the dialogs. So far I had opened dialogs 
+        from inside a “parent” component, but I hadn’t needed to pass any data to them. 
+      </li>
       <li>
         I studied the Angular Material documentation on the dialog component and this explained that I could configure the dialog with 
         a data object and then use an injection token inside the dialog component to access the data. 
@@ -187,11 +187,11 @@
       </li>
     </ul>
     <h4>Building the profile component</h4>
-    <p>
-      I then turned my attention to the profile component. I wasn’t yet sure how I would route to it but knew I could at least build 
-      the component and define the content. 
-    </p>
     <ul>
+      <li>
+        I then turned my attention to the profile component. I wasn’t yet sure how I would route to it but knew I could at least build 
+        the component and define the content. 
+      </li>
       <li>
         It was a requirement to be able to edit and delete the profile so I first thought about 
         the structure. I decided to have a main profile component with two buttons.
@@ -214,12 +214,12 @@
       </li>
     </ul>
     <h4>Creating a favourites component</h4>
-    <p>
-      The final required piece of functionality was the ability to add and remove movies to and from a user’s favourites. I had been 
-      instructed to include a heart icon on each of the movie cards and this was to be used to indicate whether or not a movie was a 
-      favourite. 
-    </p>
     <ul>
+      <li>
+        The final required piece of functionality was the ability to add and remove movies to and from a user’s favourites. I had been 
+        instructed to include a heart icon on each of the movie cards and this was to be used to indicate whether or not a movie was a 
+        favourite. 
+      </li>
       <li>
         Whilst not a requirement, I thought it would be a nice feature to have a dedicated view displaying all the user’s favourite 
         movies in one place, so I decided to start by creating another new component for this. 
@@ -234,10 +234,10 @@
       </li>
     </ul>
     <h4>Deleting movies from the favourites view</h4>
-    <p>
-      I decided to start by adding functionality to delete a movie from the favourites view. 
-    </p>
-    <ul> 
+    <ul>
+      <li>
+        I decided to start by adding functionality to delete a movie from the favourites view. 
+      </li>
       <li>
         I worked out that I could enclose the 
         heart icon from each movie card in a button and thereby trigger a function to delete the movie from favourites when the icon 
@@ -245,15 +245,15 @@
       </li>
     </ul> 
     <h4>Adding and deleting from the main view</h4>
-    <p>
-      Next I had to tackle the same problem but from inside the movie view. Here though, instead of the movie disappearing, the heart 
-      icon would change in some way to indicate whether the movie was a favourite or not. 
-    </p>
-    <p>  
-      I would also be both adding and removing a movie from favourites using the same button. In other words the icon would 
-      toggle the movie to or from favourites.
-    </p>
     <ul>
+      <li>
+        Next I had to tackle the same problem but from inside the movie view. Here though, instead of the movie disappearing, the heart 
+        icon would change in some way to indicate whether the movie was a favourite or not. 
+      </li>
+      <li>
+        I would also be both adding and removing a movie from favourites using the same button. In other words the icon would 
+        toggle the movie to or from favourites.
+      </li>
       <li>
         I started by creating 2 buttons. This would allow me to put the basic functionality in place to interact with the relevant API 
         endpoints and test it before then combining them in to a toggle function. 
@@ -288,10 +288,10 @@
       </li>
     </ul>
     <h4>Adding the toggle</h4>
-    <p>
-      Having created 2 buttons and tested the functionality I now needed to change this to one toggle. 
-    </p>
-    <ul> 
+    <ul>
+      <li>
+        Having created 2 buttons and tested the functionality I now needed to change this to one toggle. 
+      </li>
       <li>
         One thought I had was to retain two buttons but conditionally render them depending on whether the movie was a favourite, 
         but I immediately dismissed this idea as over-complicated. 
@@ -302,11 +302,11 @@
       </li>
     </ul> 
     <h4>Formatting the heart icon</h4>
-    <p>
-      At this stage I had implemented the functionality using one button, but there was still no visual indicator of the status of a 
-      particular movie. 
-    </p>
     <ul>
+      <li>
+        At this stage I had implemented the functionality using one button, but there was still no visual indicator of the status of a 
+        particular movie. 
+      </li>
       <li>
         I knew I could use property binding to tie a property of an element in the template to an expression in its component.
       </li>
@@ -316,21 +316,23 @@
       </li>
     </ul>
     <h4>Adding navigation</h4>
-    <p>
-      By this point, I had implemented all the functional requirements of the brief. Users could register, log in, look at movies 
-      including additional details and add and remove movies to and from their favourites. 
-    </p>
-    <p>
-      There was also a separate favourites view as well as a profile view where they could edit or delete their profile.
-    </p>
-    <p> 
-      However, there was currently no way for the user to go to the profile or favourites views. There was also no way to log out.
-    </p>
-    <h4>Angular Material Sidenav</h4>
-    <p>
-      The obvious design pattern to handle this was a navigation component.
-    </p>
     <ul>
+      <li>
+        By this point, I had implemented all the functional requirements of the brief. Users could register, log in, look at movies 
+        including additional details and add and remove movies to and from their favourites. 
+      </li>
+      <li>
+        There was also a separate favourites view as well as a profile view where they could edit or delete their profile.
+      </li>
+      <li>
+        However, there was currently no way for the user to go to the profile or favourites views. There was also no way to log out.
+      </li>
+    </ul>
+    <h4>Angular Material Sidenav</h4>
+    <ul>
+      <li>
+        The obvious design pattern to handle this was a navigation component.
+      </li>
       <li>
         I browsed through the Angular Material components and found a basic toolbar but also a side nav that looked interesting. I 
         also found a YouTube video that implemented both using breakpoint observers to change responsively between the two displays 
@@ -340,21 +342,21 @@
         I decided to take this approach and, by using a combination of the documentation and the video, managed to implement this 
         in a way tailored to my own app. 
       </li>
+      <li>
+        However, there was a slight complication: there was no information about how to actually render the content based on the 
+        navigation list item selected!
+      </li>
     </ul> 
-    <p>
-      However, there was a slight complication: there was no information about how to actually render the content based on the 
-      navigation list item selected!
-    </p> 
     <h4>Rendering conditional content</h4>
-    <p>
-      I didn’t want to include the navigation bars on the welcome screen. Neither did I want to repeat all of the navigation code inside 
-      each of the movie, profile and favourites views. 
-    </p>
-    <p>
-      I wanted to route to the navigation component after logging on, and then simply render the view selected by the user using 
-      the navigation buttons.
-    </p>
     <ul>
+      <li>
+        I didn’t want to include the navigation bars on the welcome screen. Neither did I want to repeat all of the navigation code inside 
+        each of the movie, profile and favourites views. 
+      </li>
+      <li>
+        I wanted to route to the navigation component after logging on, and then simply render the view selected by the user using 
+        the navigation buttons.
+      </li>
       <li>
         I remembered that there was an ngSwitch directive that could be used to apply a switch statement and render content conditionally 
         within a template. This seemed like the perfect solution. 
@@ -363,20 +365,20 @@
         I added a variable that would update whenever the user clicked on a  navigation button and used this to set the switch case 
         which thereby updated the view.
       </li>
+      <li>
+        I was feeling pretty happy with the app functionality at this point but it still lacked visual appeal.
+      </li>
     </ul>
-    <p>
-      I was feeling pretty happy with the app functionality at this point but it still lacked visual appeal.
-    </p>
     <h4>Styling the app</h4>
-    <p>
-      I had seen that Angular Material offered pre-built themes so decided to explore these first as a simple option to quickly 
-      apply some global styles. However, I wasn’t crazy about the results and decided to come up with my own. 
-    </p>
-    <p>
-      After some fun picking colours and experimenting with contrast to enhance readability and accessibility, I customised 
-      the palette.
-    </p>
     <ul>
+      <li>
+        I had seen that Angular Material offered pre-built themes so decided to explore these first as a simple option to quickly 
+        apply some global styles. However, I wasn’t crazy about the results and decided to come up with my own. 
+      </li>
+      <li>
+        After some fun picking colours and experimenting with contrast to enhance readability and accessibility, I customised 
+        the palette.
+      </li>
       <li>
         I went through each of my components in turn checking that the styles were being applied and deciding when to use 
         primary, secondary and accent colours. 
@@ -387,10 +389,10 @@
       </li>
     </ul>
     <h4>CSS challenges</h4>
-    <p>
-      I had to find a balance between using a readable font-size and fitting content neatly on to the page.
-    </p>
     <ul>
+      <li>
+        I had to find a balance between using a readable font-size and fitting content neatly on to the page.
+      </li>
       <li>
         One of my movies had a very long title that spoiled the card layout at the font size that I wanted so 
         I created a custom fontSizer function to shrink the size just for that movie. 
@@ -403,21 +405,23 @@
         I selected icons for my mobile navigation and had fun playing with their colours. I also learned how to style my snackbar messages 
         by adding a panel class that applied a global style I specified in the styles.scss file.
       </li>
+      <li>
+        Overall I enjoyed the process of turning something functional but dull into an attractive, aesthetic user interface.
+      </li>
     </ul>
-    <p>
-      Overall I enjoyed the process of turning something functional but dull into an attractive, aesthetic user interface. 
-    </p>
     <h4>Retesting and final touches</h4>
-    <p>
-      Having completed all of the main programming tasks, it was now time to retest each of the components again to ensure that 
-      everything was working as expected both functionally and stylistically. This uncovered 3 problems.
-    </p>
-    <h4>Problem 1</h4>
-    <p>
-      Chrome was giving me an autofill option on my forms that when selected populated the fields using a white background with black text. 
-      My app theme was grey with pink text so this jarred horribly. 
-    </p>
     <ul>
+      <li>
+        Having completed all of the main programming tasks, it was now time to retest each of the components again to ensure that 
+        everything was working as expected both functionally and stylistically. This uncovered 3 problems.
+      </li>
+    </ul>
+    <h4>Problem 1</h4>
+    <ul>
+      <li>
+        Chrome was giving me an autofill option on my forms that when selected populated the fields using a white background with black text. 
+        My app theme was grey with pink text so this jarred horribly. 
+      </li>
       <li>
         Because this was a Chrome rather than an Angular issue I couldn't find an answer within the Angular documentation. 
       </li>
@@ -431,23 +435,25 @@
     </ul>
     </ul>
     <h4>Problem 2</h4>
-    <p>
-      I found that when a user updated their profile, the redirect back to the main page happened so quickly that the 
-      snackbar message confirming what they had done was disappearing before they would have time to read it! 
-    </p>
-    <p>
-      I handled this by extracting the redirect statement, making it a separate function and using setTimeout to ensure it fired 
-      after the snackbar message had displayed for 4 seconds.
-    </p>
-    <h4>Problem 3</h4>
-    <p>
-      The third problem was the most challenging. The function I had created to delete a user’s profile kept returning an error message. 
-    </p>
-    <p>  
-      However, when I manually checked the database I could see that the user had indeed been deleted in each case. It seemed there was 
-      something wrong with my HTTP request.
-    </p>
     <ul>
+      <li>
+        I found that when a user updated their profile, the redirect back to the main page happened so quickly that the 
+        snackbar message confirming what they had done was disappearing before they would have time to read it!
+      </li>
+      <li>
+        I handled this by extracting the redirect statement, making it a separate function and using setTimeout to ensure it fired 
+        after the snackbar message had displayed for 4 seconds.
+      </li>
+    </ul>
+    <h4>Problem 3</h4>
+    <ul>
+      <li>
+        The third problem was the most challenging. The function I had created to delete a user’s profile kept returning an error message.
+      </li>
+      <li>
+        However, when I manually checked the database I could see that the user had indeed been deleted in each case. It seemed there was 
+        something wrong with my HTTP request.
+      </li>
       <li>
         When I had experienced the issue with my PUT request previously, I had seen that to make it work I needed to add a body to each 
         request.
@@ -457,11 +463,11 @@
       </li>
     </ul>
     <h4>Fixing the API service - Part2</h4>
-    <p>
-      I spent a couple of hours reading the Angular client HTTP API documentation to see if some special configuration was required 
-      for DELETE requests. 
-    </p>
     <ul>
+      <li>
+        I spent a couple of hours reading the Angular client HTTP API documentation to see if some special configuration was required 
+        for DELETE requests.
+      </li>
       <li>
         The documentation was quite complex but I managed to identify that there was an important configuration 
         option relating to the type of RESPONSE that the request should return. 
@@ -474,11 +480,11 @@
         I updated the request to include a response type of text and finally the function worked and correctly displayed a success 
         message to the user. 
       </li>
+      <li>
+        It was particularly satisfying to crack this problem as it involved knowledge far beyond the scope of the course 
+        materials and demonstrated some understanding of the fundamentals of TypeScript.
+      </li>
     </ul>
-    <p>
-      It was particularly satisfying to crack this problem as it involved knowledge far beyond the scope of the course 
-      materials and demonstrated some understanding of the fundamentals of TypeScript.
-    </p>
   </section>
   <section id="step5">
     <h3>Step 5: Tutor feedback</h3>
@@ -506,12 +512,15 @@
   </section>
   <section id="retro">
     <h3>Overall conclusions</h3>
-    <h4>Achievements</h4>
     <p>
-      The primary goal of this project was to build out a front end for a movie application using Angular and I feel I was successful 
-      in achieving this. 
+      This project was a fantastic learning experience that took my programming skills to a different level.
     </p>
+    <h4>Achievements</h4>
     <ul>
+      <li>
+        The primary goal was to build out a front end for a movie application using Angular and I feel I was successful 
+        in achieving this.
+      </li>
       <li>
         I produced an application of high quality in both function and appearance that included several features 
         beyond the basic project requirements.
@@ -530,18 +539,20 @@
       </li>
     </ul>
     <h4>Areas for improvement</h4>
-    <p>
-      The main area where I ran in to difficulties was with my API service HTTP requests. I had used the examples provided in my
-      course materials and assumed that they could be simply adapted to create requests to each of my endpoints without further
-      configuration. 
-    </p>
-    <p>
-      This was partly my inexperience of working with TypeScript and I now appreciate the extent to which a lack of precision in relation 
-      to the type of any value used within my code can lead to errors. 
-    </p>
-    <p>
-      This knowledge will make me a better programmer, regardless of the language that I'm using.
-    </p>
+    <ul>
+      <li>
+        The main area where I ran in to difficulties was with my API service HTTP requests. I had used the examples provided in my
+        course materials and assumed that they could be simply adapted to create requests to each of my endpoints without further
+        configuration. 
+      </li>
+      <li>
+        This was partly my inexperience of working with TypeScript and I now appreciate the extent to which a lack of precision in relation 
+        to the type of any value used within my code can lead to errors. 
+      </li>
+      <li>
+        This knowledge will make me a better programmer, regardless of the language that I'm using.
+      </li>
+    </ul>
     <h4>Impressions of Angular</h4>
     <ul>
       <li>
@@ -563,12 +574,14 @@
       </li>
     </ul>
     <h4>Credits</h4>
-    <p>
-      The Angular Material responsive navigation tutorial I followed was produced by Academind.
-    </p>  
-    <p>
-      My tutor for this project was Phemia Ampaire.
-    </p>       
+    <ul>
+      <li>
+        The Angular Material responsive navigation tutorial I followed was produced by Academind.
+      </li>
+      <li>
+        My tutor for this project was Phemia Ampaire.
+      </li>
+    </ul>       
   </section>
   <section id="end">
     <h3>Thank you for reading!</h3>
