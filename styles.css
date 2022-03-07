@@ -329,8 +329,27 @@ footer img{
   list-style-type: square;
   margin-bottom: 5px;
 }
+#screenshot1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  margin: 20px 40px 0px 40px;
+  border-radius: .25rem;
+}
+#screenshot1 img{
+  display: block;
+  width: 100%;
+  border-radius: .25rem;
+} 
+#img1 {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #DDDBFF;
+  text-align: left;
+  margin-left: 40px;
+}
 #step1 {
-  padding: 10px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
 }
 #step1 h3{
   text-align: center;
@@ -346,7 +365,7 @@ footer img{
   margin-bottom: 5px;
 }
 #step2 {
-  padding: 10px 20px 20px 20px;
+  padding: 0px 20px 20px 20px;
 }
 #step2 h3{
   text-align: center;
@@ -361,8 +380,27 @@ footer img{
   list-style-type: square;
   margin-bottom: 5px;
 }
+#screenshot2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  margin: 20px 40px 0px 40px;
+  border-radius: .25rem;
+}
+#screenshot2 img{
+  display: block;
+  width: 100%;
+  border-radius: .25rem;
+} 
+#img2 {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #DDDBFF;
+  text-align: left;
+  margin-left: 40px;
+}
 #step3 {
-  padding: 10px 20px 10px 20px;
+  padding: 20px 20px 10px 20px;
 }
 #step3 h3{
   text-align: center;
@@ -383,9 +421,6 @@ footer img{
 #step4 h3{
   text-align: center;
 }
-#step4 p{
-  margin: 10px 0px 0px 0px;
-}
 #step4 h4{
   margin: 40px 0px 0px 0px;
   text-align: left;
@@ -399,6 +434,84 @@ footer img{
 }
 #step4 li{
   list-style-type: square;
+  margin-bottom: 10px;
+}
+#screenshot3 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  margin: 30px 20px 0px 20px;
+  border-radius: .25rem;
+}
+#screenshot3 img{
+  display: block;
+  width: 100%;
+  border-radius: .25rem;
+} 
+#img3 {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #DDDBFF;
+  text-align: left;
+  margin-left: 20px;
+}
+#screenshot4 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  margin: 30px 20px 0px 20px;
+  border-radius: .25rem;
+}
+#screenshot4 img{
+  display: block;
+  width: 100%;
+  border-radius: .25rem;
+} 
+#img4 {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #DDDBFF;
+  text-align: left;
+  margin-left: 20px;
+}
+#screenshot5 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  margin: 40px 20px 0px 20px;
+  border-radius: .25rem;
+}
+#screenshot5 img{
+  display: block;
+  width: 100%;
+  border-radius: .25rem;
+  aspect-ratio: 16/9;
+} 
+#img5 {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #DDDBFF;
+  text-align: left;
+  margin-left: 20px;
+}
+#screenshot6 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  margin: 20px 20px 0px 20px;
+  border-radius: .25rem;
+}
+#screenshot6 img{
+  display: block;
+  width: 100%;
+  border-radius: .25rem;
+} 
+#img6 {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #DDDBFF;
+  text-align: left;
+  margin-left: 20px;
   margin-bottom: 10px;
 }
 #step5 {
@@ -436,6 +549,9 @@ footer img{
 #retro h4{
   margin: 30px 0px 0px 0px;
   text-align: left;
+  color: var(--primary)
+}
+#retro a:hover{
   color: var(--primary)
 }
 #end{
