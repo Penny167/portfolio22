@@ -285,13 +285,28 @@ footer img{
   color: #DDDBFF;
 }
 #heading{
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
 }
 #heading h2{
   margin-top: 50px;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
+/*
+#heading div{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  margin: 0px 10px;
+  border-radius: .25rem;
+  /* box-shadow: 0px 3px 6px 0px var(--primary); 
+}
+#heading img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: .25rem;
+} */
 .intro-grid{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -317,6 +332,9 @@ footer img{
 #step1 {
   padding: 10px 20px 20px 20px;
 }
+#step1 h3{
+  text-align: center;
+}
 #step1 p{
   margin: 10px 0px 0px 0px;
 }
@@ -330,18 +348,24 @@ footer img{
 #step2 {
   padding: 10px 20px 20px 20px;
 }
+#step2 h3{
+  text-align: center;
+}
 #step2 p{
   margin: 10px 0px 0px 0px;
 }
 #step2 ul{
-  padding: 20px 20px 10px 20px;
+  padding: 20px 20px 0px 20px;
 }
 #step2 li{
   list-style-type: square;
   margin-bottom: 5px;
 }
 #step3 {
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
+}
+#step3 h3{
+  text-align: center;
 }
 #step3 p{
   margin: 10px 0px 0px 0px;
@@ -354,14 +378,17 @@ footer img{
   margin-bottom: 5px;
 }
 #step4 {
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
+}
+#step4 h3{
+  text-align: center;
 }
 #step4 p{
   margin: 10px 0px 0px 0px;
 }
 #step4 h4{
   margin: 40px 0px 0px 0px;
-  text-align: center;
+  text-align: left;
   color: var(--primary)
 }
 #step4 h5{
@@ -375,7 +402,10 @@ footer img{
   margin-bottom: 10px;
 }
 #step5 {
-  padding: 10px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
+}
+#step5 h3{
+  text-align: center;
 }
 #step5 p{
   margin: 10px 0px 0px 0px;
@@ -390,6 +420,9 @@ footer img{
 #retro {
   padding: 10px 20px 40px 20px;
 }
+#retro h3{
+  text-align: center;
+}
 #retro p{
   margin: 10px 0px 0px 0px;
 }
@@ -402,7 +435,7 @@ footer img{
 }
 #retro h4{
   margin: 30px 0px 0px 0px;
-  text-align: center;
+  text-align: left;
   color: var(--primary)
 }
 #end{
