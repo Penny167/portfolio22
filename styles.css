@@ -333,7 +333,7 @@ footer img{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 5px;
-  margin: 20px 40px 0px 40px;
+  margin: 20px 60px 0px 60px;
   border-radius: .25rem;
 }
 #screenshot1 img{
@@ -345,7 +345,7 @@ footer img{
   margin-top: 5px;
   font-size: 10px;
   color: #DDDBFF;
-  text-align: left;
+  text-align: center;
   margin-left: 40px;
 }
 #step1 {
@@ -384,7 +384,7 @@ footer img{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 5px;
-  margin: 20px 40px 0px 40px;
+  margin: 20px 60px 0px 60px;
   border-radius: .25rem;
 }
 #screenshot2 img{
@@ -396,11 +396,11 @@ footer img{
   margin-top: 5px;
   font-size: 10px;
   color: #DDDBFF;
-  text-align: left;
+  text-align: center;
   margin-left: 40px;
 }
 #step3 {
-  padding: 20px 20px 10px 20px;
+  padding: 20px 20px 0px 20px;
 }
 #step3 h3{
   text-align: center;
@@ -440,7 +440,7 @@ footer img{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 5px;
-  margin: 30px 20px 0px 20px;
+  margin: 30px 60px 0px 60px;
   border-radius: .25rem;
 }
 #screenshot3 img{
@@ -452,14 +452,14 @@ footer img{
   margin-top: 5px;
   font-size: 10px;
   color: #DDDBFF;
-  text-align: left;
+  text-align: center;
   margin-left: 20px;
 }
 #screenshot4 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 5px;
-  margin: 30px 20px 0px 20px;
+  margin: 30px 60px 0px 60px;
   border-radius: .25rem;
 }
 #screenshot4 img{
@@ -471,34 +471,33 @@ footer img{
   margin-top: 5px;
   font-size: 10px;
   color: #DDDBFF;
-  text-align: left;
+  text-align: center;
   margin-left: 20px;
 }
 #screenshot5 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 5px;
-  margin: 40px 20px 0px 20px;
+  margin: 40px 60px 0px 60px;
   border-radius: .25rem;
 }
 #screenshot5 img{
   display: block;
   width: 100%;
   border-radius: .25rem;
-  aspect-ratio: 16/9;
 } 
 #img5 {
   margin-top: 5px;
   font-size: 10px;
   color: #DDDBFF;
-  text-align: left;
+  text-align: center;
   margin-left: 20px;
 }
 #screenshot6 {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 5px;
-  margin: 20px 20px 0px 20px;
+  margin: 20px 60px 0px 60px;
   border-radius: .25rem;
 }
 #screenshot6 img{
@@ -510,7 +509,7 @@ footer img{
   margin-top: 5px;
   font-size: 10px;
   color: #DDDBFF;
-  text-align: left;
+  text-align: center;
   margin-left: 20px;
   margin-bottom: 10px;
 }
