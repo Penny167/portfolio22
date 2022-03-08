@@ -678,10 +678,6 @@ footer img{
   #screenshot1, #screenshot2, #screenshot6{
     margin: 30px 250px 10px 250px;
   }
-  /*
-  #screenshot3, #screenshot4, #screenshot5{
-    margin: 40px 150px 0px 150px;
-  }*/
   #step1, #step2, #step3, #step4, #step5, #retro{
     margin: 30px 150px 0px 150px;
   }
@@ -811,6 +807,9 @@ footer img{
   }
   footer img{
     width: 30px;
+  }
+  #screenshot3, #screenshot4, #screenshot5{
+    margin-top: 50px;
   }
 
 }
