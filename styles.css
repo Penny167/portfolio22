@@ -425,7 +425,7 @@ footer img{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 5px;
-  margin: 30px 60px 0px 60px;
+  margin: 30px 40px 0px 40px;
   border-radius: .25rem;
 }
 #screenshot3 img{
@@ -444,7 +444,7 @@ footer img{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 5px;
-  margin: 30px 60px 0px 60px;
+  margin: 30px 40px 0px 40px;
   border-radius: .25rem;
 }
 #screenshot4 img{
@@ -463,7 +463,7 @@ footer img{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 5px;
-  margin: 40px 60px 0px 60px;
+  margin: 40px 40px 0px 40px;
   border-radius: .25rem;
 }
 #screenshot5 img{
@@ -598,7 +598,7 @@ footer img{
     margin: 20px 100px 0px 100px;
   }
   #screenshot3, #screenshot4, #screenshot5{
-    margin: 40px 100px 0px 100px;
+    margin: 40px 60px 0px 60px;
   }
   #intro, #step1, #step2, #step3, #step4, #step5, #retro{
     margin-left: 20px;
@@ -659,7 +659,122 @@ footer img{
   footer{
     padding: 35px 20px;
   }
-
+  #heading h2{
+    font-size: 24px;
+  }
+  #intro.intro-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 30px 120px 50px 120px;
+  }
+  #intro h3{ 
+    text-align: center;
+    font-size: 22px;
+  }
+  #intro li{
+    font-size: 18px;
+  }
+  #screenshot1, #screenshot2, #screenshot6{
+    margin: 30px 250px 10px 250px;
+  }
+  /*
+  #screenshot3, #screenshot4, #screenshot5{
+    margin: 40px 150px 0px 150px;
+  }*/
+  #step1, #step2, #step3, #step4, #step5, #retro{
+    margin: 30px 150px 0px 150px;
+  }
+  #step1 p{
+    font-size: 18px;
+  }
+  #step1 li{
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  #step1 h3{
+    font-size: 22px;
+  }
+  #step2 p{
+    font-size: 18px;
+  }
+  #step2 li{
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  #step2 ul{
+    padding-bottom: 10px;
+  }
+  #step2 h3{
+    font-size: 22px;
+  }
+  #step3 p{
+    font-size: 18px;
+  }
+  #step3 li{
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  #step3 h3{
+    font-size: 22px;
+  }
+  #step4 p{
+    font-size: 18px;
+  }
+  #step4 li{
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  #step4 h3{
+    font-size: 22px;
+  }
+  #step4 h4{
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  #step4 #img3{
+    font-size: 12px;
+  }
+  #step4 #img4{
+    font-size: 12px;
+  }
+  #step4 #img5{
+    font-size: 12px;
+  }
+  #step5 li{
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  #step5 p{
+    font-size: 18px;
+  }
+  #step5 h3{
+    font-size: 22px;
+  }
+  #retro{
+    margin-top: 10px;
+  }
+  #retro h4{
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  #retro h3{
+    font-size: 22px;
+  }
+  #retro p{
+    font-size: 18px;
+    text-align: left;
+  }
+  #retro li{
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  #end h3{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 20px;
+  }
 }
 
 /* desktop styles */
