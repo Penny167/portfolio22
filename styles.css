@@ -227,7 +227,7 @@ h5{
   gap: 5px;
 }
 #skills li{
-  padding: 10px;
+  padding: 10px 5px;
   background: rgba(0,0,0,0.2);
   grid-column: span 2;
   text-align: center;
@@ -587,9 +587,6 @@ footer img{
   }
   #skills{
     padding: 30px 100px;
-  }
-  #skills h4{
-    font-size: 1em;
   }
   #img1, #img2, #img3, #img4, #img5, #img6{
     font-size: 12px;
