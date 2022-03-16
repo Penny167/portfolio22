@@ -292,6 +292,23 @@ footer img{
   text-align: center;
   font-size: 1.4em;
 }
+#menu-heading{
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+#case-menu a{
+  color: #DDDBFF;
+}
+#menu-frame{
+  background-color: var(--primary);
+  padding: 4px;
+  margin: 0px 30px;
+  text-align: center;
+}
+#menu-content{
+  background-color: #0A0B5B;
+  padding: 25px;
+}
 .intro-grid{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -591,6 +608,9 @@ footer img{
   #img1, #img2, #img3, #img4, #img5, #img6{
     font-size: 12px;
   }
+  #menu-frame{
+    margin: 0px 100px;
+  }
   #screenshot1, #screenshot2, #screenshot6{
     margin: 20px 100px 0px 100px;
   }
@@ -658,6 +678,10 @@ footer img{
   }
   #heading h2{
     font-size: 24px;
+    margin-bottom: 50px;
+  }
+  #menu-frame{
+    margin: 0px 200px;
   }
   #intro.intro-grid{
     display: grid;
@@ -843,6 +867,9 @@ footer img{
   }
   footer .social{
     grid-column: 11/13;
+  }
+  #menu-frame{
+    margin: 0px 300px;
   }
 
 }
